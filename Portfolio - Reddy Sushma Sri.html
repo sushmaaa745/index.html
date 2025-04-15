@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Reddy Sushma Sri</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+      background: rgba(30, 30, 30, 0.9);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      animation: neonGlow 1.5s infinite alternate;
+    }
+
+    @keyframes neonGlow {
+      from { box-shadow: 0 0 10px rgba(0, 255, 255, 0.6); }
+      to { box-shadow: 0 0 20px rgba(0, 255, 255, 1); }
+    }
+
+    nav {
+      background: rgba(34, 34, 34, 0.9);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+      backdrop-filter: blur(5px);
+    }
+
+    nav ul {
+      list-style: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 20px;
+    }
+
+    nav ul li a {
+      color: #00fff7;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff;
+    }
+
+    section {
+      padding: 50px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+      max-width: 900px;
+      width: 90%;
+      margin: 50px auto;
+      backdrop-filter: blur(5px);
+      transition: 0.3s;
+    }
+
+    section:hover {
+      transform: scale(1.02);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .project-card {
+      background-color: #1e1e2f;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      color: #fff;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #00ffff;
+    }
+
+    .project-card .project-subtitle {
+      font-style: italic;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .project-desc {
+      display: none;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    .project-desc ul {
+      padding-left: 20px;
+    }
+
+    .project-desc ul li {
+      margin-bottom: 6px;
+    }
+
+    .contact-card {
+      background: rgba(34, 34, 34, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+      max-width: 400px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    .contact-item i {
+      font-size: 22px;
+      color: #00fff7;
+    }
+
+    .contact-item a {
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .contact-item a:hover {
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-user"></i> Reddy Sushma Sri</h1>
+    <p><i class="fas fa-code"></i> Data Analyst | AI Enthusiast | Data Engineer | Problem Solver</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about"><i class="fas fa-user-circle"></i> About</a></li>
+      <li><a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+      <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+      <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+      <li><a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2>👤 About Me</h2>
+    <p>🚀 Data Analyst | AI Enthusiast | Photographer</p>
+    <p>I'm a passionate Data Analyst with experience in Python, Machine Learning, and Power BI. I enjoy solving problems through data and turning insights into action. I'm also an AI enthusiast who believes in leveraging artificial intelligence to build real-world solutions.</p>
+    <p>Beyond tech, I'm a photographer at heart — I love capturing moments and expressing creativity through visual storytelling. My work blends analytical thinking with artistic expression to craft innovative and impactful digital experiences.</p>
+  </section>
+
+  <section id="skills">
+    <h2><i class="fas fa-code"></i> Skills</h2>
+    <p>
+      <strong>Programming Languages:</strong> C++, C, Java, JavaScript, Tensorflow, Python, SQL<br>
+      <strong>Frameworks &amp; Libraries:</strong> React.js, Node.js, Express.js, Angular (Basics)<br>
+      <strong>Platforms &amp; Tools:</strong> Git, AI Platforms, OpenCV, MongoDB, PowerBI<br>
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title">🛠 Projects</h2>
+    <div class="projects-grid">
+  
+      <!-- Movie Genre Classification -->
+      <div class="project-card" onclick="toggleDetails(this)">
+        <h3>🎬 Movie Genre Classification</h3>
+        <p class="project-subtitle">(Dec 2024)</p>
+        <div class="project-desc">
+          <ul>
+            <li>Text preprocessing &amp; embedding layer setup</li>
+            <li>LSTM model training for genre classification</li>
+            <li>Evaluated using precision-recall metrics</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Flight Pricing Analysis -->
+      <div class="project-card" onclick="toggleDetails(this)">
+        <h3>✈ Flight Pricing Analysis</h3>
+        <p class="project-subtitle">(Sep 2024)</p>
+        <div class="project-desc">
+          <ul>
+            <li>Cleaned flight data and conducted EDA</li>
+            <li>Visualized trends using Power BI and Seaborn</li>
+            <li>Defined KPIs for booking and pricing strategies</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Customer Churn Prediction -->
+      <div class="project-card" onclick="toggleDetails(this)">
+        <h3>📉 Customer Churn Prediction</h3>
+        <p class="project-subtitle">(May 2024)</p>
+        <div class="project-desc">
+          <ul>
+            <li>Built Random Forest and XGBoost models</li>
+            <li>Performed feature engineering and model evaluation</li>
+            <li>Designed dashboards for reporting</li>
+          </ul>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <style>
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+  
+    .project-card {
+      background-color: #1e1e2f;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      color: #fff;
+    }
+  
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+  
+    .project-card h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #00ffff;
+    }
+  
+    .project-card .project-subtitle {
+      font-style: italic;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+  
+    .project-desc {
+      display: none;
+      margin-top: 10px;
+      color: #ddd;
+    }
+  
+    .project-desc ul {
+      padding-left: 20px;
+    }
+  
+    .project-desc ul li {
+      margin-bottom: 6px;
+    }
+  </style>
+  
+  <script>
+    function toggleDetails(card) {
+      const desc = card.querySelector('.project-desc');
+      const isVisible = desc.style.display === 'block';
+      document.querySelectorAll('.project-desc').forEach(el => el.style.display = 'none');
+      desc.style.display = isVisible ? 'none' : 'block';
+    }
+  </script>
+  
+  <section id="experience">
+    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+    <p><strong>Data Analyst Intern at Futurense Technologies (June - Sep 2024)</strong></p>
+    <p> During my internship at Futurense Technologies, I contributed to end-to-end data analysis projects. I performed Exploratory Data Analysis (EDA) to uncover insights from raw data, developed predictive machine learning models, and deployed them using automated pipelines. I worked in an Agile environment, regularly collaborating with cross-functional teams to iterate on solutions.
+        I also created interactive dashboards using Power BI to visualize key business metrics and supported decision-making.</p>
+    <p> Key Tasks: EDA, ML model deployment, pipeline design, Agile implementation, data visualization.</p>
+    <p> Tech Stack: Python, SQL, Power BI</p>       
+  </section>
+
+  <section id="certifications" class="section">
+    <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications</h2>
+  
+    <div class="certification-links">
+  
+      <p>
+        <a href="https://learn.microsoft.com/en-us/users/reddysushmasri-6466/credentials/certification/azure-data-fundamentals?tab=credentials-tab" target="_blank">
+          <strong>DP-900:</strong> Azure Data Fundamentals – <em>Jan 2025</em>
+        </a><br>
+        <span>Gained foundational knowledge of core data concepts, relational &amp; non-relational data, and data services in Microsoft Azure.</span>
+      </p>
+  
+      <p>
+        <a href="https://learn.microsoft.com/en-us/users/reddysushmasri-6466/credentials/certification/azure-data-scientist?tab=credentials-tab" target="_blank">
+          <strong>DP-100:</strong> Azure Data Scientist – <em>Dec 2024</em>
+        </a><br>
+        <span>Built, trained, and deployed machine learning models using Azure ML studio and Python-based pipelines.</span>
+      </p>
+  
+      <p>
+        <a href="https://www.coursera.org/account/accomplishments/records/2YPSY8KEFC8G" target="_blank">
+          <strong>Google AI Essentials</strong> Google – <em>Nov 2024</em>
+        </a><br>
+        <span>Explored the architecture and use-cases of Large Language Models like GPT, BERT, and their real-world applications.</span>
+      </p>
+  
+      <p>
+        <a href="https://www.coursera.org/account/accomplishments/records/7C2ZESPCMH7P" target="_blank">
+          <strong>Prompt Engineering for Chatgpt</strong> – <em>Aug 2024</em>
+        </a><br>
+        <span>Learned to perform advanced data analysis and derive insights from datasets using ChatGPT and Python integration.</span>
+      </p>
+  
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2><i class="fas fa-phone-alt"></i> Contact</h2>
+    <div class="contact-card">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <p><a href="mailto:sushmasrireddy745@gmail.com">sushmasrireddy745@gmail.com</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <p><a href="tel:+917888336270">+91 7888336270</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <p><a href="https://www.linkedin.com/in/reddysushmasri" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-github"></i>
+        <p><a href="https://github.com/reddysushmasri" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+
+</body></html>
